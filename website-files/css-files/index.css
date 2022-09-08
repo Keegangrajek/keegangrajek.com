@@ -1,0 +1,186 @@
+/*
+Start of index.css
+
+Project 0003 (Website keegangrajek.com)
+
+Made by Keegan Grajek
+
+This file is under copyright by keegangrajek.com all rights reserved 2022
+
+DELETE THE BELOW COMMENTS WHEN DONE
+
+Rules for this document:
+- classes are for defining individual objects
+    = naming scheme should be .ftr-box-etc
+- ids are for defining groups of objects
+    = naming scheme should be #ftr-etc...-grp
+    = They should have "-grp" at the end of each id
+
+Note: naming schemes should have a mnemonic attatched ot them.
+
+The main groups for this page are:
+- head (hed)
+- everything (all)
+- scrollbar (scrlbr)
+- header (hdr)
+- body (bdy)
+- footer (ftr)
+
+organization should be done by ids (groups)
+after groups organization should be done by classes
+
+comments should describe every set of brackets and are before every initialization of code
+section comments should describe grouped together pieces of code
+ex. /* == section comment == * /
+also, sections should be used very infrequently (used for finding large groups of code)
+
+example setup:
+
+/* == ftr section == * /
+
+/* comments * /
+#ftr-box-grp {
+    ...
+}
+
+/* comments * /
+.ftr-box-1 {
+    ...
+}
+
+/* comments * /
+.ftr-box-2 {
+    ...
+}
+*/
+
+/* == all section == */
+
+/* All attribute (affect everything) */
+
+* {
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+/* :root {
+
+
+
+} */
+
+/* width */
+::-webkit-scrollbar {
+    /* width: 10px;
+    position: fixed;
+    z-index: 10; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: transparent; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    /* background: rgb(0, 0, 0); */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    /* background: rgba(0, 0, 0, 0.70); */
+}
+
+html,body{
+}
+
+body {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+/* == End of All Section == */
+
+/* == Start of Media Query Section == */
+
+/* @media only screen and (max-width: 950px) {
+}
+
+@media only screen and (min-width: 950px) {
+}
+
+@media only screen and (max-width: 600px) {
+} */
+
+/* == End of Media Query Section == */
+
+#page-parent-elms {
+    width: 100%;
+    display: flex;
+}
+
+.header-div-1 {
+    background-color: black;
+    flex: 4;
+}
+
+.body-div-1 {
+    background-color: white;
+    flex: 40;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-div-1 #bbb-column {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#body-button-box {
+    width: 50%;
+    height: 15%;
+    margin: 40px;
+}
+
+#body-button-box a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: black solid 3px;
+    border-radius: 5px;
+    font-size: x-large;
+    transition: all 0.5s;
+}
+
+#body-button-box a:hover {
+    background-color: lightgreen;
+    transition: all 0.5s;
+}
+
+.footer-div-1 {
+    background-color: lightgreen;
+    flex: 1;
+}
