@@ -59,8 +59,8 @@ example setup:
 /* All attribute (affect everything) */
 
 * {
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
@@ -74,117 +74,117 @@ example setup:
 
 /* width */
 ::-webkit-scrollbar {
-    /* width: 10px;
+    width: 12px;
     position: fixed;
-    z-index: 10; */
+    z-index: 10;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    /* background: transparent; */
+    background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    /* background: rgb(0, 0, 0); */
+    background: rgb(0, 0, 0);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    /* background: rgba(0, 0, 0, 0.70); */
+    background: rgba(0, 0, 0, 0.70);
 }
 
 html,body{
 }
 
 body {
-    display: flex;
     position: absolute;
+    display: flex;
     width: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
 }
 
 /* == End of All Section == */
 
 /* == Start of Media Query Section == */
 
-@media only screen and (max-width: 950px) {
-        .body-div-1 #bbb-column {
-        display: none !important;
+@media only screen and (max-width: 1085px) {
+    .body-div-1 {    
+        overflow-y: scroll;
     }
 }
-/*
-@media only screen and (min-width: 950px) {
 
+@media only screen and (min-width: 1085px) {
+    .body-div-1 {
+        overflow-y: hidden;
+    }
 }
-@media only screen and (max-width: 600px) {
-} */
 
 /* == End of Media Query Section == */
 
 #page-parent-elms {
-    width: 100%;
-    display: flex;
 }
 
 .header-div-1 {
+    position: absolute;
+    top: 0px;
     background-color: black;
-    flex: 4;
+    height: 60px;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-div-1 h1 {
+    color: white;
+    font-size: medium;
 }
 
 .body-div-1 {
-    background-color: white;
-    flex: 40;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.body-div-1 #bbb-column {
-    height: 80%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    padding: 30px;
-}
-
-#body-button-box {
-    width: 50%;
-    height: 10%;
-}
-
-#body-button-box a {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
     align-items: center;
     justify-content: center;
-    text-align: center;
+}
+
+.body-div-1 a {
     cursor: pointer;
-    border: black solid 3px;
+    padding: 30px;
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px black;
     border-radius: 5px;
-    font-size: 1.6vw;
-    transition: all 0.5s;
-    padding: 20px;
+    transition: all 0.3s;
 }
 
-#body-button-box a:hover {
-    background-color: lightgreen;
-    transition: all 0.5s;
+.body-div-1 a:hover {
+    background-color: lightgray;
+    transition: all 0.3s;
 }
 
 .footer-div-1 {
-    background-color: lightgreen;
-    flex: 1;
+    z-index: 10;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    height: 20px;
+    width: 100%;
 }
