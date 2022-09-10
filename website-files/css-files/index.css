@@ -66,6 +66,19 @@ example setup:
     text-transform: uppercase;
 }
 
+.cursor-default {
+    cursor: default;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* :root {
 
 
@@ -94,8 +107,8 @@ example setup:
     background: rgba(0, 0, 0, 0.70);
 }
 
-html,body{
-}
+/* html,body{
+} */
 
 body {
     position: absolute;
@@ -127,9 +140,6 @@ body {
 
 /* == End of Media Query Section == */
 
-#page-parent-elms {
-}
-
 .header-div-1 {
     position: absolute;
     top: 0px;
@@ -138,13 +148,27 @@ body {
     width: 100%;
     z-index: 10;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header-div-1 h1 {
+    margin-left: 5px;
+    margin-right: 20px;
     color: white;
     font-size: medium;
+}
+
+.header-home-btn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header-home-btn:hover {
+    color:darkgrey;
+    transition: all 0.3s;
 }
 
 .body-div-1 {
@@ -156,12 +180,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: lightgray;
     align-items: center;
     justify-content: center;
 }
 
-.body-div-1 a {
+#main-btns {
+    background-color: white;
     cursor: pointer;
     padding: 30px;
     margin: 20px;
@@ -171,20 +196,100 @@ body {
     justify-content: center;
     align-items: center;
     border: solid 3px black;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all 0.3s;
+    text-decoration: none;
+    color: black;
 }
 
-.body-div-1 a:hover {
-    background-color: lightgray;
+#main-btns:hover {
+    background-color: darkgrey;
     transition: all 0.3s;
 }
 
 .footer-div-1 {
-    z-index: 10;
     background-color: black;
     position: absolute;
     bottom: 0px;
     height: 20px;
     width: 100%;
+}
+
+/* == Mobile Menu Stuff == */
+
+.mobilemenu-dropdown-btn {
+    margin-left: 20px;
+    margin-right: 5px;
+    z-index: 12;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobilemenu-dropdown-body {
+    display: none !important;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu-bars-span-animation-1 {
+    -webkit-transform: translate(0px, 10px) rotate(45deg) scale(1) skew(0deg);
+    -moz-transform: translate(0px, 10px) rotate(45deg) scale(1) skew(0deg);
+    -o-transform: translate(0px, 10px) rotate(45deg) scale(1) skew(0deg);
+    transform: translate(0px, 10px) rotate(45deg) scale(1) skew(0deg);
+}
+
+.mobile-menu-bars-span-animation-1-not {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+
+.mobile-menu-bars-span-animation-2 {
+    transform: rotate(0deg) scale(0) skew(0deg) translate(0px);
+}
+
+.mobile-menu-bars-span-animation-2-not {
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+
+.mobile-menu-bars-span-animation-3 {
+    -webkit-transform: translate(0px, -10px) rotate(-45deg) scale(1) skew(0deg);
+    -moz-transform: translate(0px, -10px) rotate(-45deg) scale(1) skew(0deg);
+    -o-transform: translate(0px, -10px) rotate(-45deg) scale(1) skew(0deg);
+    transform: translate(0px, -10px) rotate(-45deg) scale(1) skew(0deg);
+}
+
+.mobile-menu-bars-span-animation-3-not {
+    -webkit-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    -moz-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    -o-transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+    transform: rotate(0deg) scale(1) skew(0deg) translate(0px);
+}
+  
+
+.mobilemenu-dropdown-span {
+    cursor: pointer;
+    height: 4px;
+    border-radius: 90px;
+    width: 60%;
+    margin: 3px 0px;
+    background-color: white;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
 }
