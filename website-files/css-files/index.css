@@ -217,7 +217,7 @@ body {
 
 /* == Mobile Menu Stuff == */
 
-.mobilemenu-dropdown-btn {
+.mobilemenu-dropdown-btn { /* Single button at top of header */
     margin-left: 20px;
     margin-right: 5px;
     z-index: 12;
@@ -229,17 +229,39 @@ body {
     flex-direction: column;
 }
 
+#dropdown-btns { /* Buttons inside dropdown body */
+    background-color: black;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: white;
+}
+
+#dropdown-btns:hover {
+    background-color: lightgreen;
+    color: black;
+    transition: all 0.3s;
+}
+
 .mobilemenu-dropdown-body {
-    display: none !important;
+    display: none;
     margin-top: 60px;
     margin-bottom: 20px;
     position: relative;
     height: 100%;
     width: 100%;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.758);
     align-items: center;
     justify-content: center;
 }
