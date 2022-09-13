@@ -1,12 +1,15 @@
 var mobileNavbarState; // Open = true; Closed = false;
+var footerState;
 
 document.addEventListener('DOMContentLoaded', () => {
     mobileNavbarState = false; // Open = true; Closed = false;
+    footerState = false;
 });
 
 function toggleMobileNavbar() {
     var elm1 = document.getElementsByClassName("mobilemenu-dropdown-body");
     var elm2 = document.getElementsByClassName("body-div-1");
+    var footer = document.getElementsByClassName("footer-div-1");
     try {
         if (!mobileNavbarState) {
             // console.log("uh-oh2");
@@ -31,6 +34,9 @@ function toggleMobileNavbar() {
             } catch {
                 console.log("error3");
             }
+            try {
+                footer[0].style.setProperty('display', 'none');
+            } catch {console.log("Error With footer display (toggleMobileNavbar())");}
             mobileNavbarState = true;
             return;
         } 
@@ -57,10 +63,34 @@ function toggleMobileNavbar() {
             } catch {
                 console.log("error3");
             }
+            try {
+                footer[0].style.setProperty('display', 'flex');
+            } catch {console.log("Error With footer display (toggleMobileNavbar())");}
             mobileNavbarState = false;
             return;
         }
     } catch {
         console.log("error");
     }
+}
+
+function footerAction(){
+    var rightBar = document.getElementsByClassName("right-bar");
+    var leftBar = document.getElementsByClassName("left-bar");
+    console.log("Hello");
+    try {
+        if(!footerState){
+            rightBar[0].classList.add("open-right-bar");
+            leftBar[0].classList.add("open-left-bar");
+            footerState = true;
+            return;
+        }
+        if(footerState){
+            rightBar[0].classList.remove("open-right-bar");
+            leftBar[0].classList.remove("open-left-bar");
+            footerState = false;
+            return;
+        }
+        
+    } catch {console.log ("Error in logic (footerAction())");}
 }

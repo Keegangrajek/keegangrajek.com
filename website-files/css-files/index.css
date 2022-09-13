@@ -175,7 +175,7 @@ body {
 
 .body-div-1 {
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     position: relative;
     height: 100%;
     width: 100%;
@@ -212,12 +212,92 @@ body {
     transition: all 0.3s;
 }
 
+/* Footer Stuff */
+
 .footer-div-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     position: absolute;
     bottom: 0px;
-    height: 20px;
+    right: 12px;
+    height: 40px;
+    width: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.arrow-icon {
+    height: 100%;
     width: 100%;
+    display:block;
+    position: relative;
+    cursor: pointer;
+}
+
+.left-bar {
+    position: absolute;
+    background-color: transparent;
+    top: 18px;
+    left:3px;
+    width: 30px;
+    height: 5px;
+    display: block;
+    transform: rotate(-60deg);
+    float: right;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+
+.left-bar::after {
+    content:"";
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    display: block;
+    float: right;
+    border-radius: 4px 4px 4px 4px;
+    transition: all 0.2s;
+    z-index: -1;
+}
+  
+.right-bar {
+    position: absolute;
+    background-color: transparent;
+    top: 18px;
+    left:16px;
+    width: 30px;
+    height: 5px;
+    display: block;
+    transform: rotate(60deg);
+    float: right;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+
+.right-bar::after {
+    content:"";
+    background-color: white;
+    width: 30px;
+    height: 5px;
+    display: block;
+    float: right;
+    border-radius: 4px 4px 4px 4px;
+    transition: all 0.2s;
+    z-index: -1;
+}
+
+.open-left-bar {
+    transition: all 0.2s;
+    transform-origin: center center;
+    transform: rotate(60deg);
+}
+
+.open-right-bar {
+    transition: all 0.2s;
+    transform-origin: center center;
+    transform: rotate(-60deg);
 }
 
 /* == Mobile Menu Stuff == */
@@ -260,7 +340,7 @@ body {
 .mobilemenu-dropdown-body {
     display: none;
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     position: relative;
     height: 100%;
     width: 100%;
