@@ -75,19 +75,33 @@ function toggleMobileNavbar() {
 }
 
 function footerAction(){
+    var background = document.getElementsByClassName("footer-div-1");
     var rightBar = document.getElementsByClassName("right-bar");
     var leftBar = document.getElementsByClassName("left-bar");
+    var footerBody = document.getElementsByClassName("footer-popup");
+    var body = document.getElementsByClassName("body-div-1");
+    var headerButton = document.getElementsByClassName("mobilemenu-dropdown-btn");
     console.log("Hello");
     try {
         if(!footerState){
+            console.log("here?");
+            background[0].style.setProperty('background-color', 'white');
             rightBar[0].classList.add("open-right-bar");
             leftBar[0].classList.add("open-left-bar");
+            body[0].style.setProperty('display','none');
+            footerBody[0].style.setProperty('display', 'flex');
+            headerButton[0].style.setProperty('display', 'none');
             footerState = true;
             return;
         }
         if(footerState){
+            console.log("here??");
+            background[0].style.setProperty('background-color', 'black');
             rightBar[0].classList.remove("open-right-bar");
             leftBar[0].classList.remove("open-left-bar");
+            body[0].style.setProperty('display','flex');
+            footerBody[0].style.setProperty('display', 'none');
+            headerButton[0].style.setProperty('display', 'flex');
             footerState = false;
             return;
         }
