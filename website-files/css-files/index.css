@@ -155,8 +155,9 @@ body {
 }
 
 .header-div-1 h1 {
-    margin-left: 5px;
+    margin-left: 20px;
     margin-right: 20px;
+    /* margin: auto; */
     color: white;
     font-size: medium;
 }
@@ -226,6 +227,7 @@ body {
     background-color: black;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease-in-out;
 }
 
 .footer-div-1 { /* The button box for the footer popup */

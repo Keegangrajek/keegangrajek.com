@@ -1,5 +1,6 @@
 var mobileNavbarState; // Open = true; Closed = false;
 var footerState;
+var delayInMilliseconds = 200; //1 second
 
 document.addEventListener('DOMContentLoaded', () => {
     mobileNavbarState = false; // Open = true; Closed = false;
@@ -81,21 +82,24 @@ function footerAction(){
     var footerBody = document.getElementsByClassName("footer-popup");
     var body = document.getElementsByClassName("body-div-1");
     var headerButton = document.getElementsByClassName("mobilemenu-dropdown-btn");
+    var headerTitle = document.getElementsByClassName("header-div-1");
+    let height = document.querySelector('.footer-popup');
     console.log("Hello");
     try {
         if(!footerState){
-            console.log("here?");
+            headerTitle[0].style.setProperty('justify-content', 'center');
             background[0].style.setProperty('background-color', 'white');
             rightBar[0].classList.add("open-right-bar");
             leftBar[0].classList.add("open-left-bar");
             body[0].style.setProperty('display','none');
             footerBody[0].style.setProperty('display', 'flex');
             headerButton[0].style.setProperty('display', 'none');
+            console.log(height.offsetHeight+"");
             footerState = true;
             return;
         }
         if(footerState){
-            console.log("here??");
+            headerTitle[0].style.setProperty('justify-content', 'space-between');
             background[0].style.setProperty('background-color', 'black');
             rightBar[0].classList.remove("open-right-bar");
             leftBar[0].classList.remove("open-left-bar");
@@ -107,4 +111,6 @@ function footerAction(){
         }
         
     } catch {console.log ("Error in logic (footerAction())");}
+
+
 }
