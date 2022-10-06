@@ -1,36 +1,14 @@
-<!-- 
-Start of admin-page.html 
-
-Project 0003 (Website keegangrajek.com) 
-
-Made by Keegan Grajek
-
-This file is under copyright by diegoberho.com all rights reserved 2022
-
-DELETE WHEN DONE WITH DOCUMENT ONLY FOR KEEGAN'S EYES
-Rules for document:
-class should be at the front of each element
-id should be next
-
-Class is used as a unique identifier following the format of class="hed-metatag-charset"
-id should be used as a group identifier following the format of id="hed-metatag-grp"
-id needs to have "-grp" at the end of the naming scheme
-
-comments must be on every line before the targeted element to describe it's function
-section comments must separate other sections and describe the purpose of the targeted section
-< -- == hed section == -- >
-
--->
 <!DOCTYPE html>
-<!-- Start of html tag -->
-<html>
-    <head>
+<!-- HTML tag to establish document standards -->
+<html class="html-elm" lang="en-US">
+    <!-- Head of Document -->
+    <head class="hed-elm">
         <!-- meta tag to establish charset -->
         <meta class="mta-charset" charset="UTF-8">
         <!-- meta tag to establish key-words for search engines to use -->
-        <meta class="mta-keywords" name="keywords" content="">
+        <meta class="mta-keywords" name="keywords" content="Porfolio, Schedule, Music, Projects, Climbing, Media, Art, Personal">
         <!-- Auto refresh of page (on client side) every 30 seconds -->
-        <meta class="mta-autorefresh" http-equiv="refresh" content="30">
+        <meta class="mta-autorefresh" http-equiv="refresh" content="7200">
         <!-- Establishing the media viewport (how the website is being viewed) -->
         <meta class="mta-viewport" name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Defining the author of the website -->
@@ -39,53 +17,141 @@ section comments must separate other sections and describe the purpose of the ta
         <meta class="mta-description" name="description" content="Keegan Grajek's Website">
         <!-- Title of Website -->
         <title class="ttl-elm">Keegan Grajek</title>
-        <!-- Default opening of links (in a new tab) if not specified in attribute -->
-        <!-- <base class="bse-elm" href="index.html" target="_blank"> -->
         <!-- Icon file for tab of website -->
-        <link class="link-ico" rel="shortcut icon" href="" type="image/x-icon">
-        <!-- Link to my fonts I will be using in my website -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
+        <link class="link-ico" rel="icon" href="./website-files/img-files/logo-1.ico" type="image/x-icon">
         <!-- Links to external documents used in this document -->
         <link class="lnk-css" href="./website-files/css-files/index.css" rel="stylesheet" type="text/css"/>
-        <!-- link to cloudfare stylesheet for social media icons -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <!-- Script tag to link to the js file -->
         <script class="lnk-javascript" src="./website-files/js-files/index.js" type="text/javascript"></script>
+        <!-- link to cloudfare stylesheet for social media icons -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
         <!-- Script for linking the icons -->
         <script src="https://kit.fontawesome.com/8993ea0ee9.js" crossorigin="anonymous"></script>
+        <!-- Font Loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     </head>
+    <!-- body element -->
     <body>
-        <div class="header-div-1" id="page-parent-elms">
+        <div class="head-div-1">
             <div class="mobilemenu-dropdown-btn" onclick="toggleMobileNavbar()">
                 <span class="mobilemenu-dropdown-span" id="span-1"></span>
                 <span class="mobilemenu-dropdown-span" id="span-2"></span>
                 <span class="mobilemenu-dropdown-span" id="span-3"></span>
             </div>
             <h1 class="unselectable"><a href="./home.html" class="header-home-btn">Keegan's Website</a> / Admin Page</h1>
-        </div>
-        <div class="body-div-1" id="page-parent-elms">
-        </div>
+        </div>   
+        <div class="head-div-2"></div>
         <div class="mobilemenu-dropdown-body">
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./website-portfolio.html">Website Porfolio</a>
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./current-projects.html">Current Projects</a>
-            <a class="unselectable" id="dropdown-btns" target="_blank" href="https://www.google.com">Keegan's Climbing Co</a>
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./social-media.html">Social Media</a>
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./art.html">Art</a>
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./schedule.html">Schedule</a>
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./music.html">Music</a>
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./statistics.html">Statistics</a>
-            <a class="unselectable" id="dropdown-btns" target="_self" href="./admin-page.html">Admin Page</a>
+            <div class="mbmnddbd-spacing">
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./website-portfolio.html">Website Porfolio</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./current-projects.html">Current Projects</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_blank" href="https://www.google.com">Keegan's Climbing Co</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./social-media.html">Social Media</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./art.html">Art</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./schedule.html">Schedule</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./music.html">Music</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./statistics.html">Statistics</a>
+                <a class="dropdown-btns unselectable" id="dropdown-btns" target="_self" href="./admin-page.html">Admin Page</a>
+            </div>
+        </div> 
+        <div class="body-div">
+            <div class="body-box" id="bb-2">
+                <div class="test">
+                    <div class="about-photo"></div>
+                    <div class="about-content"></div>
+                    <div class="about-content"></div>
+                </div>
+            </div>
+            <div class="body-box" id="bb-1">
+                <a class="unselectable" id="main-btns" target="_self" href="./website-portfolio.html">Website Porfolio</a>
+                <a class="unselectable" id="main-btns" target="_self" href="./current-projects.html">Current Projects</a>
+                <a class="unselectable" id="main-btns" target="_blank" href="https://www.google.com">Keegan.Climbing.Co</a>
+                <a class="unselectable" id="main-btns" target="_self" href="./social-media.html">Social Media</a>
+                <a class="unselectable" id="main-btns" target="_self" href="./art.html">Art</a>
+                <a class="unselectable" id="main-btns" target="_self" href="./schedule.html">Schedule</a>
+                <a class="unselectable" id="main-btns" target="_self" href="./music.html">Music</a>
+                <a class="unselectable" id="main-btns" target="_self" href="./statistics.html">Statistics</a>
+                <a class="unselectable" id="main-btns" target="_self" href="./admin-page.html">Admin Page</a>
+            </div>
+            <div class="body-box" id="bb-3">
+                <div class="test"></div>
+            </div>
+        </div>     
+        <div class="foot-popup">
+            <div class="foot-cont unselectable">
+                <div class="foot-cont-1" id="foot-cont-boxes">
+                    <a class="logo-img"></a>
+                    <p>Sobriosity</p>
+                    <p>v5-v6</p>
+                    <p>Gold Bar, WA</p>
+                </div>
+                <div class="foot-cont-2" id="foot-cont-boxes">
+                    <h1>Keegan's Website</h1>
+                    <a>Questions</a>
+                    <a>Help</a>
+                    <a>Contact</a>
+                </div>
+                <div class="foot-cont-3 unselectable" id="foot-cont-boxes">
+                    <h1>Contributions</h1>
+                    <a>Apply</a>
+                    <a>Advertising</a>
+                    <a>Press</a>
+                    <a>Team</a>
+                </div>
+                <div class="foot-cont-4" id="foot-cont-boxes">
+                    <h1>Website</h1>
+                    <a href="https://github.com/Keegangrajek/keegangrajek.com">Github</a>
+                    <a>Site Map</a>
+                    <a>Copyright</a>
+                    <a>Privacy</a>
+                    <a>Terms</a>
+                    <a>Cookies</a>
+                    <a>Eula</a>
+                    <a>Disclaimer</a>
+                    <a>Refund/Return</a>
+                </div>
+                <div class="foot-cont-5 unselectable" id="foot-cont-boxes">
+                    <h1>Quick Links</h1>
+                    <a target="_self" href="./website-portfolio.html">Website Porfolio</a>
+                    <a target="_self" href="./current-projects.html">Current Projects</a>
+                    <a target="_blank" href="https://www.google.com">Keegan.Climbing.Co</a>
+                    <a target="_self" href="./social-media.html">Social Media</a>
+                    <a target="_self" href="./art.html">Art</a>
+                    <a target="_self" href="./schedule.html">Schedule</a>
+                    <a target="_self" href="./music.html">Music</a>
+                    <a target="_self" href="./statistics.html">Statistics</a>
+                    <a target="_self" href="./admin-page.html">Admin Page</a>
+                </div>
+                <div class="foot-cont-6" id="foot-cont-boxes">
+                    <div class="foot-cont-6-box" id="fc6b-1">
+                        <h1>Social Media Links</h1>
+                        <a class="facebook">Facebook</a>
+                        <a class="youtube">YouTube</a>
+                        <a class="instagram">Instagram</a>
+                        <a class="tiktok">TikTok</a>
+                        <a class="snapchat">Snapchat</a>
+                        <a class="pinterest">Pinterest</a>
+                        <a class="twitter">Twitter</a>
+                        <a class="reddit">Reddit</a>
+                        <a class="quora">Quora</a>
+                        <a class="linkedin">Linkedin</a>
+                        <a class="tumblr">Tumblr</a>
+                        <a class="github">Github</a>
+                        <a class="yelp">Yelp</a>
+                        <a class="email">Email</a>
+                        <a class="phone">Phone</a>
+                    </div>
+                    <div class="foot-cont-6-box" id="fc6b-2">
+                        <h1>Copyright</h1>
+                        <div class="copyright-text"><span>&copy;</span> 2022 Keegan Grajek, All Rights Reserved.</div> 
+                    </div>
+                </div>
+            </div>
+            <div class="foot-botm"></div>
         </div>
-        <div class="footer-popup">
-            <a class="unselectable"></a>
-            <a class="unselectable"></a>
-            <a class="unselectable"></a>
-            <a class="unselectable"></a>
-            <a class="unselectable"></a>
-            <a class="unselectable"></a>
-            <a class="unselectable"></a>
-        </div>
-        <div class="footer-div-1" id="page-parent-elms" onclick="footerAction()">
+        <div class="foot-div-1" onclick="footerAction()">
             <a class="arrow-icon">
                 <span class="left-bar"></span>
                 <span class="right-bar"></span>
