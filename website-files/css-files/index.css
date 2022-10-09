@@ -400,6 +400,7 @@ body {
 }
 
 .wp-button {
+  text-decoration: none;
   padding: 5px;
   color: white;
   background-color: #222120;
