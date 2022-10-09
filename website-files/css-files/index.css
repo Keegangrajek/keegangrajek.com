@@ -320,6 +320,108 @@ body {
   padding: 20px;
 }
 
+.website-portfolio-box {
+  height: 300px;
+  width: 250px;
+  margin: 20px;
+  border: #222120 solid 4px;
+  border-radius: 25px;
+  background-color: rgba(205, 216, 193, 1);
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+
+.wp-photo {
+  height: 50%;
+  width: 95%;
+  background-color: black;
+  background-image: url("../img-files/wp-img-3.png");
+  border-radius: 20px;
+  border: solid 3px #222120;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wp-photo a {
+  background-color: #22212000;
+  transition: all 0.3s;
+  color: rgba(255, 255, 255, 0);
+  font-size: xx-large;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+}
+
+.wp-photo a:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #2221207a;
+}
+
+#wp-photo-1 {
+  background-image: url("../img-files/wp-img-1.png");
+}
+
+#wp-photo-2 {
+  background-image: url("../img-files/wp-img-2.png");
+}
+
+.wp-content {
+  margin: 5px;
+  font-size: large;
+  color: #222120;
+}
+
+.wp-weblink {
+  margin: 8px 2px 2px 2px;
+  font-size: small;
+  color: #222120;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.wp-weblink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: rgb(18, 17, 16);
+}
+
+.wp-button {
+  padding: 5px;
+  color: white;
+  background-color: #222120;
+  font-size: large;
+  font-weight: bold;
+  width: 130px;
+  height: 30px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border: solid 2px #222120;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.wp-button:hover {
+  background-color: #504d4b;
+  cursor: pointer;
+}
+
 #socialmedia-icons {
   padding: 5px;
   color: white;
@@ -365,7 +467,7 @@ body {
   min-height: 100%;
 }
 
-.body-box a {
+.n-link {
   padding: 0px 10px;
   margin: 10px;
   display: flex;
@@ -384,7 +486,7 @@ body {
   text-decoration: none;
 }
 
-.body-box a:hover {
+.n-link:hover {
   cursor: pointer;
   transition: all 0.3s;
   background-color: rgb(161, 192, 125);
