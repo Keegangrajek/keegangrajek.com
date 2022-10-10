@@ -423,6 +423,25 @@ body {
   cursor: pointer;
 }
 
+.cp-body-box-head {
+  padding: 50px 20px 0px 20px;
+  font-size: 40px;
+}
+
+.cp-box {
+  height: 300px;
+  top: 0px;
+  width: 100%;
+  border: solid 1px black;
+}
+
+.cp-box-content-1 {
+  height: 100%;
+}
+.cp-box-content-2 {
+  
+}
+
 #socialmedia-icons {
   padding: 5px;
   color: white;
