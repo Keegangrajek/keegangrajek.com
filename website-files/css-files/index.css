@@ -433,13 +433,24 @@ body {
   top: 0px;
   width: 100%;
   border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .cp-box-content-1 {
   height: 100%;
+  width: 300px;
+  background-color: red;
+  left: 0px;
 }
 .cp-box-content-2 {
-  
+  height: 100%;
+  width: calc(100% - 300px);
+  margin: auto;
+  background-color: green;
+  right: 0px;
 }
 
 #socialmedia-icons {
