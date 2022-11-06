@@ -1,8 +1,8 @@
 # keegangrajek.com
-My personal website
+project 000-0003 My personal website
 
 <!-- Title -->
-# Project 0003 (Website)
+# Project 000-003 (website)
 ## keegangrajek.com [Link](https://keegangrajek.com)
 <!-- Title (End) -->
 
