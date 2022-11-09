@@ -160,4 +160,44 @@ function copyDiscord() {
   
     // Alert the copied text
     alert("Copied the text: " + copyText.value);
-  }
+}
+
+// These functions make the hover animation for the mobilemenu dropdown button
+// This pretty much just changes the color of the spans upon hovering over the box that contains them
+
+function hoverOnMobileMenuButton(){
+    var l = document.getElementsByClassName("mobilemenu-dropdown-span");
+    for (let p = 0; p < l.length; p++) {
+        const element = l[p];
+        element.classList.add("mobilemenu-dropdown-span-hover");
+    }
+    return;
+}
+function hoverOutMobileMenuButton(){
+    var l = document.getElementsByClassName("mobilemenu-dropdown-span");
+    for (let p = 0; p < l.length; p++) {
+        const element = l[p];
+        element.classList.remove("mobilemenu-dropdown-span-hover");
+    }
+    return;
+}
+
+// This code below is my discovery of cross-origin policy
+// I can't change the code within another iframe that I don't have access to the origin (in this case google)
+// it shoots out this error Uncaught 'DOMException: Blocked a frame with origin "null" from accessing a cross-origin frame.'
+
+// function changeCalendar(){
+//     console.log("hello");
+//     setTimeout(function(){
+//         var iframe = document.getElementById("calendar-embed");
+//         var l = iframe.contentWindow.document.getElementById("calendarTitle");
+//         l.style.setProperty('display','none');
+//     }, 1000);
+// }
+
+// window.onload = function() {
+//     let myiFrame = document.getElementById("calendar-embed");
+//     let doc = myiFrame.contentDocument;
+//     console.log(doc);
+//     doc.body.innerHTML = doc.body.innerHTML + '<style>/******* Put your styles here *******</style>';
+//  }
