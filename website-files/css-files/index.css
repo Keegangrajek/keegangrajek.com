@@ -7,6 +7,12 @@
 :root {
   /* colors */
   --btn-color-hover: #b1dbb1;
+  --green-light: rgba(205, 216, 193, 1);;
+  --gray-light: #45525D;
+  --gray: #222120;
+  --green-dark: rgb(161, 192, 125);;
+  --orange-light: #c9a06b;
+  --orange-dark: #C18536;
 }
 
 body {
@@ -627,6 +633,65 @@ body {
 
 #art-body-button-box {
   flex-wrap: wrap;
+}
+
+/* statistics page stuff */
+
+#stat-page-body-div {
+  overflow-y:overlay;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  padding: 10px;
+}
+
+#stat-page-box {
+  display: inline-block;
+  height: calc(50% - 20px);
+  min-width: 280px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  border: solid 3px #222120;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+progress {
+  min-width: 50px;
+  max-width: 400px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 2px;
+}
+progress::-webkit-progress-bar {
+  background-color: lightgray;
+  border-radius: 2px;
+}
+progress::-webkit-progress-value {
+  background-color: var(--green-dark);
+}
+
+.progress-bar-1 {
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#pb-item {
+  padding: 3px;
+  font-size: 12px;
 }
 
 /* Footer stuff */
