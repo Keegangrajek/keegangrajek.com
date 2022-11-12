@@ -460,24 +460,51 @@ body {
   height: 300px;
   top: 0px;
   width: 100%;
-  border: solid 1px black;
+  border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
+  padding: 20px;
+}
+
+#cpbc-001 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+#cpbc-2-001 {
+  border-left: red solid 10px;
+}
+
+#cpbc-002 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/keegangrajek.com/main/website-files/img-files/wp-img-1.png");
+}
+
+#cpbc-2-002 {
+  border-left: green solid 10px;
 }
 
 .cp-box-content-1 {
   height: 100%;
-  width: 300px;
-  background-color: red;
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  border: solid 3px var(--gray);
+  background-position: center;
   left: 0px;
 }
 .cp-box-content-2 {
-  height: 100%;
-  width: calc(100% - 300px);
+  height: calc(100% - 40px);
+  width: 70%;
+  background-color: var(--gray);
+  border-radius: 25px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+  padding: 20px;
   margin: auto;
-  background-color: green;
   right: 0px;
 }
 
