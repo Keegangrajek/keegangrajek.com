@@ -42,10 +42,17 @@ body {
   .body-box {
     padding: 10px;
   }
+  .cp-body-box {
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 916px) {
   .body-box {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .cp-body-box {
     padding-left: 10% !important;
     padding-right: 10% !important;
   }
@@ -78,6 +85,7 @@ body {
   background-clip: padding-box;
   border-radius: 9999px;
   background-color: #222120;
+  height: 50px;
 }
 
 /* Handle on hover */
@@ -454,11 +462,11 @@ body {
 .cp-body-box-head {
   padding: 50px 20px 0px 20px;
   font-size: 40px;
+  text-align: center;
+  color: var(--gray);
 }
 
 .cp-box {
-  height: 300px;
-  top: 0px;
   width: 100%;
   border-radius: 25px;
   display: flex;
@@ -468,8 +476,66 @@ body {
   padding: 20px;
 }
 
+@media only screen and (max-width: 796px) {
+  .cp-box {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .cp-box-content-1 {
+    margin-bottom: 20px;
+    height: 60vw;
+    width: 60vw;
+  }
+  .cp-box-content-2 h1 {
+    font-size: 4vw;
+    font-weight: bolder;
+  }
+  .cp-box-content-2 h2 {
+    font-size: 3.5vw;
+  }
+  .cp-box-content-2 h3 {
+    font-size: 3vw;
+  }
+  .cp-box-content-2 h4 {
+    font-size: 2.9vw;
+  }
+  .cp-box-content-2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 796px) {
+  .cp-box-content-1 {
+    margin-right: 30px;
+    height: 300px;
+    width: 300px;
+  }
+  .cp-box-content-2 {
+    width: 50%;
+    min-height: calc(300px - 40px);
+  }
+}
+
+.cp-body-box {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-height: fit-content;
+  width: 100%;
+  padding: 20px;
+}
+
 #cpbc-001 {
   background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-1 {
+  background-color: red;
 }
 
 #cpbc-2-001 {
@@ -477,17 +543,162 @@ body {
 }
 
 #cpbc-002 {
-  background-image: url("https://raw.githubusercontent.com/Keegangrajek/keegangrajek.com/main/website-files/img-files/wp-img-1.png");
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/keegangrajek.com/main/website-files/img-files/diego-website.png");
+}
+
+.cppbb-2 {
+  background-color: green;
 }
 
 #cpbc-2-002 {
   border-left: green solid 10px;
 }
 
+#cpbc-003 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-3 {
+  background-color: blue;
+}
+
+#cpbc-2-003 {
+  border-left: blue solid 10px;
+}
+
+#cpbc-004 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-4 {
+  background-color: blueviolet;
+}
+
+#cpbc-2-004 {
+  border-left: blueviolet solid 10px;
+}
+
+#cpbc-005 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-5 {
+  background-color: orange;
+}
+
+#cpbc-2-005 {
+  border-left: orange solid 10px;
+}
+
+#cpbc-006 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-6 {
+  background-color: yellow;
+}
+
+#cpbc-2-006 {
+  border-left: yellow solid 10px;
+}
+
+#cpbc-007 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-7 {
+  background-color: darkred;
+}
+
+#cpbc-2-007 {
+  border-left: darkred solid 10px;
+}
+
+#cpbc-008 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-8 {
+  background-color: lawngreen;
+}
+
+#cpbc-2-008 {
+  border-left: lawngreen solid 10px;
+}
+
+#cpbc-009 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-9 {
+  background-color: pink;
+}
+
+#cpbc-2-009 {
+  border-left: pink solid 10px;
+}
+
+#cpbc-010 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-10 {
+  background-color: navy;
+}
+
+#cpbc-2-010 {
+  border-left: navy solid 10px;
+}
+
+#cpbc-011 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-11 {
+  background-color: lime;
+}
+
+#cpbc-2-011 {
+  border-left: lime solid 10px;
+}
+
+#cpbc-012 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-12 {
+  background-color: aqua;
+}
+
+#cpbc-2-012 {
+  border-left: aqua solid 10px;
+}
+
+#cpbc-013 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-13 {
+  background-color: brown;
+}
+
+#cpbc-2-013 {
+  border-left: brown solid 10px;
+}
+
+#cpbc-014 {
+  background-image: url("https://raw.githubusercontent.com/Keegangrajek/ps4-controller-wall-mount/main/files/view-1.png");
+}
+
+.cppbb-14 {
+  background-color: crimson;
+}
+
+#cpbc-2-014 {
+  border-left: crimson solid 10px;
+}
+
 .cp-box-content-1 {
-  height: 100%;
-  width: 30%;
-  margin-right: 20px;
   border-radius: 25px;
   background-repeat: no-repeat;
   background-size:cover;
@@ -495,17 +706,58 @@ body {
   background-position: center;
   left: 0px;
 }
+
 .cp-box-content-2 {
-  height: calc(100% - 40px);
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  max-height: fit-content;
   background-color: var(--gray);
   border-radius: 25px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   color: white;
   padding: 20px;
-  margin: auto;
+  padding-bottom: 15px;
   right: 0px;
+}
+
+.cp-box-content-2 h1 {
+  border:#ffffff solid 3px;
+  padding: 5px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  background-color: white;
+  color: var(--gray);
+}
+
+.cp-box-content-2 h2 {
+  margin: 5px 0px;
+}
+
+.cp-box-content-2 h3 {
+  margin: 3px 0px;
+  flex: 1;
+}
+
+.cp-box-content-2 h4 {
+  margin-top: 5px;
+}
+
+.cp-progress-bar {
+  align-self: flex-end;
+  background-color: black;
+  border-radius: 999px;
+  margin: 5px 0px 5px 0px;
+  width: 100%;
+  height: 5px;
+}
+
+#cp-progress-bar-bar {
+  border-radius: 999px;
+  height: 100%;
 }
 
 .social-media-icons-bar {
@@ -563,6 +815,10 @@ body {
 #bb-3 {
   background-color: white;
   min-height: 100%;
+}
+
+#bb-4 {
+  background-color: white;
 }
 
 .n-link {
