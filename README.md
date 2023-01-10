@@ -1,5 +1,5 @@
 # keegangrajek.com
-project 000-0003 My personal website
+project 000-003 My personal website
 
 <!-- Title -->
 # Project 000-003 (website)
